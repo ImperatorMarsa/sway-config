@@ -27,3 +27,6 @@ titlebar_border_thickness 0
 ### Gaps
 gaps inner 4
 gaps outer 2
+
+### Font
+font pango:FiraCode 10
