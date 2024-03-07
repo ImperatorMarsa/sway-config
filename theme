@@ -30,3 +30,12 @@ gaps outer 2
 
 ### Font
 font pango:FiraCode 10
+
+# Blur
+blur enable
+blur_passes 2
+layer_effects "waybar" blur enable
+
+# Dim
+default_dim_inactive 0.3
+dim_inactive_colors.unfocused #1e1e2e
