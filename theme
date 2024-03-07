@@ -34,8 +34,14 @@ font pango:FiraCode 10
 # Blur
 blur enable
 blur_passes 2
-layer_effects "waybar" blur enable
 
 # Dim
 default_dim_inactive 0.3
-dim_inactive_colors.unfocused #1e1e2e
+dim_inactive_colors.unfocused $base
+
+# Corners radius
+set $corner_radius 10
+corner_radius $corner_radius
+
+# WatBar
+layer_effects "waybar" blur enable; corner_radius $cornres_radius
