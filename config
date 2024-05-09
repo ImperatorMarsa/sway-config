@@ -7,6 +7,9 @@
 ### Variables
 #
 
+# Comand to lock desktop
+set $lock_desktop 'swaylock -f -c 000000'
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 
@@ -55,9 +58,9 @@ output VGA-1  pos 0 -900
 # Example configuration:
 #
 # exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
+#          timeout 300 $lock_desktop \
 #          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
+#          before-sleep $lock_desktop
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when

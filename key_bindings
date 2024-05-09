@@ -25,6 +25,9 @@
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec "$HOME"/.config/rofi/bin/powermenu
 
+    # Lock desktop
+    bindsym $mod+Escape exec $lock_desktop
+
 #
 ##
 ### Moving around:
