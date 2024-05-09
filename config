@@ -43,7 +43,7 @@ set $menu $rofi_cmd -show combi -combi-modes drun#run -modes combi
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /var/home/timofey/gits/dotfiles/wallpapers/shards.png fill
+output * bg /var/home/timofey/gits/dotfiles/wallpapers/evening-sky.png fill
 #
 # Example configuration:
 #
