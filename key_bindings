@@ -25,6 +25,9 @@
     # Lock desktop
     bindsym $mod+Escape exec $lock_desktop
 
+    # Idle inhibitor
+    bindsym $mod+Shift+m $idle_inhibitor
+
 #
 ##
 ### Moving around:

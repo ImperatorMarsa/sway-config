@@ -7,6 +7,9 @@
 ### Variables
 #
 
+# Idle inhibitor
+set $idle_inhibitor matcha -t --bar=waybar > /tmp/custom_matcha
+
 # Comand to lock desktop
 set $lock_desktop 'swaylock -f -c 000000'
 
@@ -111,8 +114,8 @@ input "type:keyboard" {
 
 # Matcha
 exec matcha --daemon --off &
-exec matcha -t --bar=waybar > /tmp/custom_matcha &
-exec matcha -t --bar=waybar > /tmp/custom_matcha &
+exec $idle_inhibitor &
+exec $idle_inhibitor &
 
 ## Includes
 #
