@@ -105,6 +105,17 @@ input "type:keyboard" {
 # important to make the magic work. And if you want to learn the secret behind
 # the trick, it's all in the `wordexp(3)`.
 #
+
+## Demons
+#
+
+# Matcha
+exec matcha --daemon --off &
+exec matcha -t --bar=waybar > /tmp/custom_matcha &
+exec matcha -t --bar=waybar > /tmp/custom_matcha &
+
+## Includes
+#
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
 include theme
 include key_bindings
