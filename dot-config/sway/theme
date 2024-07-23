@@ -29,19 +29,19 @@ gaps inner 4
 gaps outer 2
 
 ### Font
-font pango:FiraCode 10
+font pango:CaskaydiaCoveNerdFont 10
 
-# Blur
-blur enable
-blur_passes 2
-
-# Dim
-default_dim_inactive 0.3
-dim_inactive_colors.unfocused $base
-
-# Corners radius
-set $corner_radius 10
-corner_radius $corner_radius
-
-# WatBar
-layer_effects "waybar" blur enable; corner_radius $cornres_radius
+#_ # Blur
+#_ blur enable
+#_ blur_passes 2
+#_ 
+#_ # Dim
+#_ default_dim_inactive 0.3
+#_ dim_inactive_colors.unfocused $base
+#_ 
+#_ # Corners radius
+#_ set $corner_radius 10
+#_ corner_radius $corner_radius
+#_ 
+#_ # WayBar
+#_ layer_effects "waybar" blur enable; corner_radius $cornres_radius
